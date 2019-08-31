@@ -1,0 +1,29 @@
+@font-face {
+	font-family: 'Myriad Pro';
+	src: url('../fonts/MyriadPro-BoldCondIt.eot');
+	src: local('Myriad Pro Bold Condensed Italic'), local('MyriadPro-BoldCondIt'),
+		url('../fonts/MyriadPro-BoldCondIt.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/MyriadPro-BoldCondIt.woff') format('woff'),
+		url('../fonts/MyriadPro-BoldCondIt.ttf') format('truetype');
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Myriad Pro';
+	src: url('../fonts/MyriadPro-BlackIt.eot');
+	src: local('Myriad Pro Black Italic'), local('MyriadPro-BlackIt'),
+		url('../fonts/MyriadPro-BlackIt.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/MyriadPro-BlackIt.woff') format('woff'),
+		url('../fonts/MyriadPro-BlackIt.ttf') format('truetype');
+	font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+	font-family: "LemonTuesday";
+		src: url("../fonts/Lemon-Tuesday.woff2") format("woff"), /* Modern Browsers */
+			 url("../fonts/Lemon-Tuesday.woff2") format("woff2"); /* Modern Browsers */
+	font-weight: normal;
+	font-style: normal;
+  }

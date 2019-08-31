@@ -1,0 +1,189 @@
+.slider-section {
+    width: 100%;
+    height: rem(675px);
+}
+
+.slider {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.slick-dots {
+	display: flex;
+    justify-content: center;
+    z-index: 20;
+    position: absolute;
+    left: 50%;
+    transform: translateX(rem(-47.5px));
+    top: rem(595px);
+		
+	list-style-type: none;
+	
+		li:not(:last-child) {
+			margin-right: rem(25px);;
+		}
+	
+		button {
+            cursor: pointer;
+            display: block;
+            width: rem(11px);
+            height: rem(11px);
+			border: 2px solid #c2c2c2;
+            background-color: transparent;
+            border-radius: 50%;
+            padding: rem(11px);
+            text-indent: -9999px;
+            
+            &:hover {
+                background-color: $green;
+            }
+		}
+	
+		li.slick-active button {
+            background-color: $green;
+            border-color: $green;
+            outline: transparent;
+		}
+	
+}
+
+.slider-active {
+    padding: rem(13px);
+    border: none;
+    background-color: $green;
+}
+
+
+.slider__container {
+    height: 100%;
+}
+
+.slider__list {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.slider__item {
+    min-width: 100%;
+    height: 100%;
+    background-color: #291e30;
+    display: flex !important;
+
+    &--first {
+        background: url(../../img/Карта_градиента_784.jpg) center center / cover no-repeat;
+    }
+
+    &--second {
+        background: url(../../img/ow9ldfpcdivl.jpg) center center / cover no-repeat;
+    }
+
+    &--third {
+        background: url(../../img/land-rolls-land-japanese-food-soy-sauc.jpg) center center / cover no-repeat;
+    }
+}
+
+.slider__content {
+    position: relative;
+    padding-top: rem(81px);
+    padding-left: rem(394px);
+    min-height: 100%;
+}
+
+.slider__title {
+    width: rem(506px);
+    height: rem(300px);
+    font-family: "LemonTuesday";
+    font-size: rem(110px);
+    font-weight: 400;
+    line-height: rem(100px);
+    color: $green;
+}
+
+.slider__info-worktime {
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: rem(26px);
+    font-style: italic;
+    margin-bottom: rem(56px);
+
+}
+
+.slider__btn {
+    color: #fefffe;
+    font-family: "Open Sans";
+    font-size: rem(16px);
+    font-weight: 400;
+    text-transform: uppercase;
+    border: none;
+    background-color: $orange;
+    padding: rem(21px) rem(74px);
+    border-radius: rem(3px);
+    cursor: pointer;
+    margin-bottom: rem(154px);
+
+    &:hover {
+        background-color: darken($orange, 10%);
+    }
+}
+
+
+.slider__sticker {
+    position: absolute;
+    width: rem(141px);
+    height: rem(141px);
+    background: linear-gradient(to bottom, #de2024, #b81f24);
+    border-radius: 50%;
+    text-align: center;
+    top: rem(112px);
+    left: rem(972px);
+
+}
+
+.slider__sticker-text {
+    line-height: rem(32px);
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: rem(29px);
+    font-weight: 700;
+    margin: 30% 0;
+}
+
+.slider__arrow {
+    position: absolute;
+    background-color: rgba( #000000, 0.5);
+    width: rem(53px);
+    height: rem(53px);
+    border-radius: 50%;
+    font-size: 0;
+    z-index: 2;
+
+    &:hover {
+        background-color: rgba( #000000, 0.6);
+    }
+
+
+    &--prev {
+        left: rem(156px);
+        top: rem(294px);
+
+        svg {
+            margin-left: rem(19px);
+            margin-top: rem(18px);
+        }
+    }
+
+    &--next {
+        right: rem(156px);
+        top: rem(294px);
+
+        svg {
+            transform: rotate(180deg);
+            margin-left: rem(24px);
+            margin-top: rem(18px);
+        }
+    }
+
+}

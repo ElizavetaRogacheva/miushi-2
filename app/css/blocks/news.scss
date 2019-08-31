@@ -1,0 +1,36 @@
+.news-section {
+    height: rem(739px);
+    background: url(../../img/Прямоугольник_1350.png) center center / cover no-repeat;
+}
+
+.news__wrapper {
+    width: rem(1165px);
+    margin: 0 auto;
+}
+
+.news-header { 
+    padding-top: rem(69px);
+    padding-bottom: rem(60px);
+}
+
+.news-header__list {
+    display: flex;
+}
+
+.news-header__link {
+    color: #999999;
+    font-family: "Open Sans - Semi Bold";
+    font-size: rem(18px);
+    font-weight: 400;
+    line-height: rem(28.43px);
+    margin-right: rem(70px);
+
+    &:active {
+        color: #fd4f10;
+    }
+}
+
+.news__products {
+    padding-top: rem(14px);
+    overflow: hidden;
+}

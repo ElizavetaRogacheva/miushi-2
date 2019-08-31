@@ -1,0 +1,99 @@
+.reasons-section{
+    padding-top: rem(102px);
+}
+
+.reasons-title {
+    margin-bottom: rem(65px);
+}
+
+.reasons-block {
+    width: rem(1146px);
+    margin: 0 auto;
+    margin-bottom: rem(76px);
+}
+
+.reasons__list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.reasons__item {
+    width: 20%;
+    padding-top: rem(100px);
+    padding-bottom: rem(60px);
+    text-align: center;
+    position: relative;
+
+    &::before {
+        position: absolute;
+        content: "";
+        width: rem(92px);
+        height: rem(73px);
+        top: rem(13px);
+        right: rem(68.5px);
+    }
+
+    &--kitchen {
+        &::before {
+            background: url(../../img/kitchen.png) center center no-repeat;
+        }
+    }
+
+    &--dish {
+        &::before {
+            background: url(../../img/dish.png) center center no-repeat;
+        }
+    }
+
+    &--money {
+        &::before {
+            background: url(../../img/money.png) center center no-repeat;
+        }
+    }
+
+    &--like {
+        &::before {
+            background: url(../../img/like.png) center center no-repeat;
+        }
+    }
+    &--fish {
+        &::before {
+            background: url(../../img/fish.png) center center no-repeat;
+        }
+    }
+    &--rice {
+        &::before {
+            background: url(../../img/rice.png) center center no-repeat;
+        }
+    }
+    &--octopus {
+        &::before {
+            background: url(../../img/octopus.png) center center no-repeat;
+        }
+    }
+    &--knife {
+        &::before {
+            background: url(../../img/knife.png) center center no-repeat;
+        }
+    }
+    &--pizza {
+        &::before {
+            background: url(../../img/pizza.png) center center no-repeat;
+        }
+    }
+    &--feather {
+        &::before {
+            background: url(../../img/feather-hand-drawn-outline.png) center center no-repeat;
+        }
+    }
+
+}
+
+.reasons__text {
+    color: #4d4d4d;
+    font-size: rem(16px);
+    font-weight: 400;
+    line-height: rem(28.43px);
+    padding: 0 rem(14px);
+}

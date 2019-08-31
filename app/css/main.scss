@@ -1,0 +1,27 @@
+$orange: #fd4f10;
+$green: #84c604;
+$deep-green: #1fba0a;
+$dark-gray: #1a2d34;
+$gray: #6b96a5;
+$deep-gray: #32505a;
+$font-gray: #656565;
+$menu-gray:#444444;
+
+$desktop: 1200px;
+$tablets: 768px;
+$phones: 480px;
+
+@import "media.scss";
+@import "layout.scss";
+@import "fonts.scss";
+@import "slick.scss";
+
+
+@import "blocks/header.scss";
+@import "blocks/slider.scss";
+@import "blocks/products.scss";
+@import "blocks/news.scss";
+@import "blocks/reasons.scss";
+@import "blocks/comments.scss";
+@import "blocks/form.scss";
+@import "blocks/about.scss";

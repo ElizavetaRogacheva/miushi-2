@@ -1,0 +1,80 @@
+.contacts-section {
+    max-width: 100%;
+    padding-top: rem(78px);
+    padding-left: 40%;
+    background: url(../../img/pottery-3227903_1920.png) 0 0 no-repeat;
+    background-color: #000000;
+
+}
+
+.contacts__wrapper {
+    padding-bottom: rem(80px);
+
+}
+
+.contacts__text {
+    font-size: rem(16px);
+    font-weight: 400;
+    line-height: rem(30.1px);
+    color: #fff;
+    margin-bottom: rem(2px);
+}
+
+.contacts-title {
+    font-family: "LemonTuesday";
+    font-size: rem(54px);
+    font-weight: 400;
+    line-height: rem(30.1px);
+    color: #fff;
+    margin-bottom: rem(29px);
+}
+
+.contacts__form {
+    margin-bottom: rem(37px);
+}
+
+.contacts__input {
+    width: rem(241px);
+    height: rem(38px);
+    border: none;
+    border-bottom: 1px solid #fff;
+    background-color: transparent;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: rem(14px);
+    font-weight: 400;
+    line-height: rem(24px);
+    margin-right: rem(50px);
+
+    &:focus {
+        background-color: rgba(255, 255, 255, 0.15);
+        outline: none;    
+    }
+}
+
+.contacts__btn {
+    cursor: pointer;
+    color: #ffffff;
+    font-family: "Open Sans - Semibold";
+    font-size: rem(14px);
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: rem(0.5px);  
+    border: none;
+    background-color: $orange;  
+    padding: rem(12px) rem(51px);
+    border-radius: rem(5px);
+
+    &:hover {
+        background-color: darken($orange, 10%);
+    }
+
+}
+
+.contacts__notice {
+    opacity: 0.7;
+    color: #ffffff;
+    font-size: rem(12px);
+    font-weight: 400;
+    line-height: rem(30.1px);
+}

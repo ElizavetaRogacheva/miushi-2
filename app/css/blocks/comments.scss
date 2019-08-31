@@ -1,0 +1,22 @@
+.comments-title {
+    margin-bottom: rem(40px);
+}
+
+.comments__block {
+    width: rem(1140px);
+    margin: 0 auto;
+    margin-bottom: rem(110px);
+}
+
+.comments__list {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.comments__item {
+    width: rem(360px);
+    height: rem(524px);
+    border: 1px solid #e6e6e6;
+    background-color: #ffffff;
+}

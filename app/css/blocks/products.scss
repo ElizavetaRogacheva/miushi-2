@@ -1,0 +1,237 @@
+.products__list {
+    width: rem(1165px);
+    margin: 0 auto;
+}
+
+.products__item {
+    border-bottom: 1px solid blue;
+}
+
+.product__block {
+    width: rem(1165px);
+    padding-top: rem(83px);
+    overflow: hidden;
+
+}
+
+.block-title {
+    color: #32505a;
+    font-family: "LemonTuesday";
+    font-size: rem(60px);
+    font-weight: 400;
+    line-height: rem(28.43px);
+    margin-bottom: rem(46px);
+    text-align: center;
+    position: relative;
+
+    &::before {
+        position: absolute;
+        content: "";
+        width: rem(109px);
+        height: rem(40px);
+        left: rem(200px);
+        background-image: url(../../img/Слой_519.png);
+        background-repeat: no-repeat;
+    }
+
+    &::after {
+        position: absolute;
+        content: "";
+        width: rem(109px);
+        height: rem(40px);
+        right: rem(200px);
+        background-image: url(../../img/Слой_519.png);
+        background-repeat: no-repeat;
+        transform: scale(-1, 1);
+
+    }
+}
+
+.product-carousel {
+    padding-bottom: rem(80px);
+}
+
+.product-carousel__list {
+    display: flex;
+    width: rem(1165px);
+    padding: 0 rem(14px);
+}
+
+.product__card {
+    width: rem(263px);
+    border-radius: rem(10px);
+    box-shadow: 0 0 20px 0 #534d4d96;
+    margin-right:  rem(28px); 
+    padding-bottom: rem(40px);
+    background-color: #fff;
+
+    &:last-child {
+        margin: 0;
+    }
+}
+
+.product__img {
+    border-top-left-radius: rem(10px);
+    border-top-right-radius: rem(10px);
+    margin-bottom: rem(20px);
+}
+
+.product__title {
+    font-family: "Open Sans";
+    font-size: rem(20px);
+    font-weight: 700;
+    line-height: rem(28.43px);
+    text-align: center;
+    margin-bottom: rem(15px);
+}
+
+.product__description-text {
+    font-size: rem(12px);
+    font-weight: 300;
+    line-height: rem(15px);
+    text-align: center;
+    margin-bottom: rem(15px);
+}
+
+.product__sale-block {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: rem(15px);
+
+}
+
+.product__price {
+    font-family: "Roboto Slab";
+    font-size: rem(22px);
+    font-weight: 700;
+    line-height: rem(28.43px);
+}
+
+.product__amount {
+    display: flex;
+    align-items: center;
+    width: rem(63px);
+    justify-content: space-between;
+}
+
+.product-amount__btn {
+    width: rem(13px);
+    height: rem(13px);
+    border: 1px solid #808080;
+    background-color: transparent;
+    border-radius: 50%;
+    padding: 0;
+    font-size: 0;
+    cursor: pointer;
+}
+
+.product-amount__input {
+    width: rem(20px);
+    height: rem(12px);
+    border: none;
+    text-align: center;
+    font-weight: 400;
+    line-height: rem(28.43px);
+}
+
+.product__btn-basket {
+    border-radius: rem(5px);
+    background-color: $orange;
+    border: none;
+    color: #ffffff;
+    font-family: "Open Sans - Semibold";
+    font-size: rem(14px);
+    font-weight: 400;
+    line-height: rem(28.43px);
+    text-transform: uppercase;
+    letter-spacing: rem(0.7px);
+    padding: rem(15px) rem(76px) rem(14px) rem(32px);
+    cursor: pointer;
+    margin: 0 rem(34px);
+    position: relative;
+
+    &:hover {
+        background-color: darken($orange, 10%);
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: rem(22px);
+        height: rem(20px);
+        right: rem(30px);
+        top: rem(17px);
+        background: url(../../img/online-shopping-cart_копия.png);
+        background-repeat: no-repeat;
+    }
+}
+
+
+.additive__amount {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    width: rem(193px);
+    margin: 0 rem(34px) rem(14px);
+}
+
+.additive__text {
+    color: #000000;
+    font-size: rem(12px);
+    font-weight: 400;
+    line-height: rem(28.43px);
+}
+
+.additive__input {
+    width: rem(40px);
+    height: rem(20px);
+    border-radius: rem(3px);
+    background-color: #f2f2f2;
+    border: none;
+}
+
+.additive__btn {
+    cursor: pointer;
+    font-size: 0;
+    line-height: 0;
+    border: none;
+    min-width: rem(7px);
+    height: rem(7px);
+    padding: 0;
+    background: url(../../img/Фигура_624_копия.png) center center / cover no-repeat;
+    position: absolute;
+}
+
+.additive__price {
+    font-size: rem(12px);
+    font-weight: 300;
+    line-height: rem(28.43px);
+}
+
+.additive__btn-plus {
+    cursor: pointer;
+    font-size: 0;
+    width: rem(19px);
+    height: rem(19px);
+    border-radius: rem(3px);
+    padding: 0;
+    border: none;
+    background-image: url(../../img/Фигура_624_копия_2.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #fd4f10;
+
+}
+
+.additive__select {
+    width: rem(193px);
+    height: rem(25px);
+    border-radius: rem(3px);
+    background-color: #f2f2f2;
+    border: none;
+    margin: 0 rem(34px);
+    margin-bottom: rem(14px);
+}

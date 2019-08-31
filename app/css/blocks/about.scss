@@ -1,0 +1,37 @@
+.about-section {
+    padding-top: rem(77px);
+}
+
+.about__title {
+    margin-bottom: rem(75px);
+}
+
+.about-info__block {
+    width: rem(1140px);
+    margin: 0 auto rem(160px);
+    background: url(../../img/ajy.png) rem(863px) rem(70px)  no-repeat;
+
+}
+
+.about-info__title {
+    color: #32505a;
+    font-size: rem(24px);
+    font-weight: 700;
+    margin-bottom: rem(39px);
+}
+
+.about-info__text {
+    color: #4d4d4d;
+    font-size: rem(14px);
+    font-weight: 400;
+    line-height: rem(20px);
+}
+
+.about-info__paragraph {
+    margin-bottom: rem(30px);
+    padding-right: rem(355px);
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
