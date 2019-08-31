@@ -4,11 +4,21 @@
     width: rem(1140px);
 }
 
+.main-menu__btn {
+    display: none;
+}
+
+.main__logo {
+    position: absolute;
+    top: rem(15px);
+}
+
 .main__header-top {
     display: flex;
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid #f2f2f2;
+    padding-left: rem(330px);
 }
 
 .info-nav__list {
@@ -104,6 +114,13 @@
     height: 100%;
 }
 
+.customer-block {
+    position: absolute;
+    top: rem(115px);
+    left: rem(840px);
+
+}
+
 
 
 .customer-block__list {
@@ -125,6 +142,11 @@
 .customer-block__link {
     color: #000000;
     padding: rem(15px) rem(25px) rem(15px) rem(35px);
+    font-family: "Myriad Pro";
+    font-size: rem(14px);
+    font-weight: 400;
+    text-transform: uppercase;
+
 
     &:hover {
         background-color: $green;

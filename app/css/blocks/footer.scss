@@ -1,0 +1,54 @@
+.main__footer {
+    background-color: #1a2d34;
+}
+
+.footer__container {
+    width: rem(1170px);
+    margin: 0 auto;
+}
+
+.footer__menu {
+    display: flex;
+    justify-content: space-around;
+    padding-top: rem(70px);
+    margin-bottom: rem(60px);
+}
+
+.footer-menu__link {
+    font-size: rem(12px);
+    color: #6b96a5;
+}
+
+.footer-menu__item--bold {
+    a {
+        font-size: rem(14px);
+        color: #ffffff;
+        margin-bottom: rem(20px);
+    }
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-info__miushi {
+    font-size: rem(12px);
+    color: #6b96a5;
+
+}
+
+.footer-info__agreement-link {
+    font-size: rem(12px);
+    color: #6b96a5;
+    text-decoration: underline;
+}
+
+.footer-info__socials {
+    display: flex;
+    margin-bottom: rem(50px);
+
+    div {
+        margin-right: rem(15px);
+    }
+}

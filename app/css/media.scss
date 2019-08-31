@@ -2,6 +2,11 @@
     @return $px / 16px + 0rem;
 }
 
+$desktop: 1200px;
+$tablets: 750px;
+$phones: 320px;
+
+
 @mixin tablets {
     @media screen and (max-width: $tablets) {
       @content;
