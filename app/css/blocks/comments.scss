@@ -6,12 +6,21 @@
     width: rem(1140px);
     margin: 0 auto;
     margin-bottom: rem(110px);
+
+    @include tablets {
+        width: rem(750px);
+    }
 }
 
 .comments__list {
     display: flex;
     justify-content: space-between;
     width: 100%;
+
+    @include tablets {
+        overflow: hidden;
+        padding-left: rem(15px);
+    }
 }
 
 .comments__item {
@@ -19,4 +28,10 @@
     height: rem(524px);
     border: 1px solid #e6e6e6;
     background-color: #ffffff;
+
+    @include tablets {
+        min-width: rem(345px);
+        margin-right: rem(30px);
+    }
+
 }
