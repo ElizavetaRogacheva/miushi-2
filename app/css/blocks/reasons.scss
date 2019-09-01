@@ -4,18 +4,37 @@
 
 .reasons-title {
     margin-bottom: rem(65px);
+
+    @include tablets {
+        font-size: rem(48px);
+        &::before {
+            left: rem(15px);
+
+        }
+    
+        &::after {
+            right: rem(15px);
+        }
+    
+
+    }
 }
 
 .reasons-block {
     width: rem(1146px);
     margin: 0 auto;
     margin-bottom: rem(76px);
+
+    @include tablets {
+        width: rem(750px);
+    }
 }
 
 .reasons__list {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+
 }
 
 .reasons__item {
@@ -24,6 +43,10 @@
     padding-bottom: rem(60px);
     text-align: center;
     position: relative;
+
+    @include tablets {
+        width: 33%;
+    }
 
     &::before {
         position: absolute;
@@ -85,6 +108,10 @@
     &--feather {
         &::before {
             background: url(../../img/feather-hand-drawn-outline.png) center center no-repeat;
+        }
+
+        @include tablets {
+            margin: 0 auto;
         }
     }
 
