@@ -6,11 +6,20 @@
 .news__wrapper {
     width: rem(1165px);
     margin: 0 auto;
+
+    @include tablets {
+        width: rem(750px);
+    }
 }
 
 .news-header { 
     padding-top: rem(69px);
     padding-bottom: rem(60px);
+
+    @include tablets {
+        padding-left: rem(15px);
+
+    }
 }
 
 .news-header__list {
