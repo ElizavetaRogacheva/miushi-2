@@ -4,12 +4,28 @@
 
 .about__title {
     margin-bottom: rem(75px);
+
+    @include tablets {
+        &::before {
+            left: rem(148px);
+        }
+
+        &::after {
+            right: rem(148px);
+        }
+    }
 }
 
 .about-info__block {
     width: rem(1140px);
     margin: 0 auto rem(160px);
     background: url(../../img/ajy.png) rem(863px) rem(70px)  no-repeat;
+
+    @include tablets {
+        width: rem(750px);
+        background: url(../../img/ajy.png) rem(450px) rem(70px)  no-repeat;
+
+    }
 
 }
 
@@ -31,7 +47,16 @@
     margin-bottom: rem(30px);
     padding-right: rem(355px);
 
+    @include tablets {
+        padding-right: rem(310px);
+
+    }
+
     &:last-child {
         margin-bottom: 0;
+
+        @include tablets {
+            padding: 0;
+        }
     }
 }
