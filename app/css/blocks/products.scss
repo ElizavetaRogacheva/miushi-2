@@ -1,16 +1,26 @@
 .products__list {
     width: rem(1165px);
     margin: 0 auto;
+
+    @include tablets {
+        width: 100%;
+    }
 }
 
 .products__item {
-    border-bottom: 1px solid blue;
+
 }
 
 .product__block {
     width: rem(1165px);
     padding-top: rem(83px);
     overflow: hidden;
+
+    @include tablets {
+        width: rem(750px);
+        margin: 0 auto;
+
+    }
 
 }
 
@@ -45,28 +55,69 @@
         transform: scale(-1, 1);
 
     }
+
+    @include tablets {
+        font-size: rem(48px);
+        &::before {
+            width: rem(86px);
+            height: rem(32px);
+            background-size: contain;
+        }
+    
+        &::after {
+            width: rem(86px);
+            height: rem(32px);
+            background-size: contain;
+
+    
+        }
+    
+
+    }
 }
 
 .product-carousel {
     padding-bottom: rem(80px);
+
+    @include tablets {
+        padding-left: rem(15px);
+    }
+
 }
 
 .product-carousel__list {
     display: flex;
     width: rem(1165px);
     padding: 0 rem(14px);
+
+    @include tablets {
+        width: rem(750px);
+        padding: 0;
+
+    }
 }
 
 .product__card {
     width: rem(263px);
     border-radius: rem(10px);
-    box-shadow: 0 0 20px 0 #534d4d96;
     margin-right:  rem(28px); 
     padding-bottom: rem(40px);
     background-color: #fff;
 
     &:last-child {
         margin: 0;
+    }
+
+    @include tablets {
+        width: rem(220px);
+        margin-right:  rem(30px); 
+
+
+        img {
+            width: rem(220px);
+            height: rem(217px);
+        }
+
     }
 }
 
@@ -166,6 +217,11 @@
         background: url(../../img/online-shopping-cart_копия.png);
         background-repeat: no-repeat;
     }
+
+    @include tablets {
+        margin: 0 rem(12px);
+
+    }
 }
 
 
@@ -176,6 +232,11 @@
     position: relative;
     width: rem(193px);
     margin: 0 rem(34px) rem(14px);
+
+    @include tablets {
+        margin: 0 rem(12px) rem(14px);
+
+    }
 }
 
 .additive__text {
@@ -234,4 +295,9 @@
     border: none;
     margin: 0 rem(34px);
     margin-bottom: rem(14px);
+
+    @include tablets {
+        margin: 0 rem(12px);
+ 
+    }
 }
