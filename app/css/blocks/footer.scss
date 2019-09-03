@@ -33,7 +33,7 @@
 .footer-menu__wrapper {
     @include tablets {
         background-color: #20353d;
-
+        display: none;
     }
 }
 
@@ -126,9 +126,10 @@
         height: rem(11px);
         border: none;
         margin-top: rem(30px);
-        background-image: url(../../img/arrow-top.png);
+        background-image: url(../../img/arrow-bottom.png);
         background-color: transparent;
         cursor: pointer;
+
     }
 }
 
@@ -136,5 +137,17 @@
     @include tablets {
         display: flex;
         justify-content: space-between;
+        cursor: pointer;
     }
 }
+
+.active-accordion {
+    button {
+        background-image: url(../../img/arrow-top.png);
+    }
+}
+
+.footer-menu__top.active-accordion + .footer-menu__wrapper {
+    display: block;
+}
+
