@@ -1,5 +1,9 @@
 .about-section {
     padding-top: rem(77px);
+
+    @include tablets {
+        padding: 0;
+    }
 }
 
 .about__title {
@@ -22,8 +26,8 @@
     background: url(../../img/ajy.png) rem(863px) rem(70px)  no-repeat;
 
     @include tablets {
-        width: rem(750px);
-        background: url(../../img/ajy.png) rem(450px) rem(70px)  no-repeat;
+        width: 94%;
+        background: url(../../img/ajy.png) 99% rem(70px)  no-repeat;
 
     }
 
