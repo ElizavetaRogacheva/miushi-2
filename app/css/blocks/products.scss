@@ -13,7 +13,7 @@
     overflow: hidden;
 
     @include tablets {
-        width: rem(750px);
+        width: 98%;
         margin: 0 auto;
 
     }
@@ -76,7 +76,7 @@
     padding-bottom: rem(80px);
 
     @include tablets {
-        padding-left: rem(15px);
+        padding-left: 2%;
     }
 
 }
@@ -87,7 +87,7 @@
     padding: 0 rem(14px);
 
     @include tablets {
-        width: rem(750px);
+        width: 100%;
         padding: 0;
 
     }
@@ -105,8 +105,8 @@
     }
 
     @include tablets {
-        width: rem(220px);
-        margin-right:  rem(30px); 
+        width: 33%;
+        margin-right: 4%; 
 
 
         img {

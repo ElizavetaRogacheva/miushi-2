@@ -11,11 +11,11 @@
 
     @include tablets {
         &::before {
-            left: rem(148px);
+            left: 8%;
         }
 
         &::after {
-            right: rem(148px);
+            right: 8%;
         }
     }
 }

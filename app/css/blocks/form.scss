@@ -65,8 +65,8 @@
     }
 
     @include tablets {
-        width: rem(220px);
-        margin-right: rem(30px);
+        width: 30%;
+        margin-right: 4%;
 
 
     }
@@ -87,6 +87,10 @@
 
     &:hover {
         background-color: darken($orange, 10%);
+    }
+
+    @include tablets {
+        width: 30%;
     }
 
 }
