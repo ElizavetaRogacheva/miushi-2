@@ -52,6 +52,7 @@
 }
 
 .main-header__menu-adaptive {
+    border: 2px solid blue;
     @include tablets {
         height: rem(600px);
         width: rem(383px);
@@ -62,8 +63,18 @@
         z-index: 10000;
         display: flex;
         flex-direction: column;
-
     }
+
+   /* @include phones {
+        width: 50%;
+        background-color: #fff;        //повтор кода
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 10000;
+        display: flex;
+        flex-direction: column;
+    }*/
 }
 
 .menu-adaptive__btn-close {
@@ -83,6 +94,21 @@
         background-color: transparent;
         cursor: pointer;
     }
+
+    /*@include phones {
+        display: block;
+        position: absolute;
+        font-size: 0;
+        height: rem(22px);
+        width: rem(22px);
+        border: none;
+        top: rem(16px);
+        left: 80%;
+        background-image: url(../../img/close.png);    //повтор кода
+        background-repeat: no-repeat;
+        background-color: transparent;
+        cursor: pointer;
+    }*/
 }
 
 .main__header-top {
@@ -98,6 +124,13 @@
         padding: 0;
         display: block;
     }
+
+    /*@include phones {
+        order: 2;
+        border: none;
+        padding: 0;                      //повтор кода
+        display: block;
+    }*/
 }
 
 
@@ -117,6 +150,13 @@
         padding-left: rem(56px);
         font-weight: bold;
     }
+
+    /*@include phones {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: rem(56px);
+        font-weight: bold;
+    }*/
 }
 
 .info-nav__item:not(:last-child) {
