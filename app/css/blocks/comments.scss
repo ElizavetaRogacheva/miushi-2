@@ -8,18 +8,19 @@
     margin-bottom: rem(110px);
 
     @include tablets {
-        width: rem(750px);
+        width: 99%;
+        margin: 0 auto;
+        overflow: hidden;
     }
 }
 
 .comments__list {
     display: flex;
     justify-content: space-between;
+    margin: 0 auto;
     width: 100%;
 
     @include tablets {
-        overflow: hidden;
-        padding-left: rem(15px);
     }
 }
 
@@ -30,7 +31,7 @@
     background-color: #ffffff;
 
     @include tablets {
-        min-width: rem(345px);
+        width: 50%;
         margin-right: rem(30px);
     }
 
