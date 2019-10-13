@@ -9,8 +9,7 @@
     }
 
     @include phones {
-        background-color: red;
-        width: 100%;
+        max-height: rem(56px);
     }
 }
 
@@ -18,10 +17,6 @@
     display: none;
 
     @include tablets {
-        @include menu-btn;
-    }
-
-    @include phones {
         @include menu-btn;
     }
 }
@@ -35,6 +30,13 @@
         top: rem(10px);
         transform: translateX(rem(-80px));
     }
+
+    @include phones {
+        width: rem(46px);
+        height: rem(46px); 
+        top: rem(25px);
+        transform: translateX(rem(-23px));
+    }
 }
 
 .main-logo__img {
@@ -44,15 +46,14 @@
 
     @include phones {
         background-image: url(../../img/mob-logo.png);
-        width: rem(46px);
-        height: rem(46px); 
         background-repeat: no-repeat; 
-        background-size: cover;  
+        width: 100%;
+        height: 100%;
+        background-size: contain;  
     }
 }
 
 .main-header__menu-adaptive {
-    border: 2px solid blue;
     @include tablets {
         height: rem(600px);
         width: rem(383px);
@@ -65,16 +66,10 @@
         flex-direction: column;
     }
 
-   /* @include phones {
-        width: 50%;
-        background-color: #fff;        //повтор кода
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 10000;
-        display: flex;
-        flex-direction: column;
-    }*/
+    @include phones {
+        width: 90%;
+        height: rem(530px);
+    }
 }
 
 .menu-adaptive__btn-close {
@@ -95,20 +90,9 @@
         cursor: pointer;
     }
 
-    /*@include phones {
-        display: block;
-        position: absolute;
-        font-size: 0;
-        height: rem(22px);
-        width: rem(22px);
-        border: none;
-        top: rem(16px);
-        left: 80%;
-        background-image: url(../../img/close.png);    //повтор кода
-        background-repeat: no-repeat;
-        background-color: transparent;
-        cursor: pointer;
-    }*/
+    @include phones {
+        left: 90%;
+    }
 }
 
 .main__header-top {
@@ -124,13 +108,6 @@
         padding: 0;
         display: block;
     }
-
-    /*@include phones {
-        order: 2;
-        border: none;
-        padding: 0;                      //повтор кода
-        display: block;
-    }*/
 }
 
 
@@ -150,13 +127,6 @@
         padding-left: rem(56px);
         font-weight: bold;
     }
-
-    /*@include phones {
-        flex-direction: column;
-        align-items: flex-start;
-        padding-left: rem(56px);
-        font-weight: bold;
-    }*/
 }
 
 .info-nav__item:not(:last-child) {
@@ -263,11 +233,16 @@
     letter-spacing: rem(0.7px);
     color: #000000;
 
+
     @include tablets {
         display: block;
         min-height: rem(206px);
         padding-top: rem(60px);
         margin-bottom: rem(105px);
+    }
+
+    @include phones {
+        margin-bottom: rem(30px);
     }
 }
 
@@ -294,16 +269,19 @@
 .customer-block {
     position: absolute;
     top: rem(115px);
-    left: rem(840px);
+    right: rem(60px);
 
     @include tablets {
-        left: 88%;
+        right: 0;
         top: rem(20px);
         transform: translateX(rem(-38px));
     }
 
+    @include phones {
+        width: rem(70px);
+        right: rem(25px);
+    }
 }
-
 
 
 .customer-block__list {
@@ -348,6 +326,10 @@
             left: rem(5px);
             top: rem(13px);
             background: url(../../img/user.png) center center / cover no-repeat;
+
+            @include phones {
+                left: rem(40px);
+            }
         }
     }
 
@@ -362,6 +344,11 @@
             left: rem(5px);
             top: rem(13px);
             background: url(../../img/cart.png) center center / cover no-repeat;
+
+            @include phones {
+                left: rem(30px);
+            }
+
         }
     }
 
