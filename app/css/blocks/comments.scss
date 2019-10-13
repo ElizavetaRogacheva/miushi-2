@@ -19,9 +19,14 @@
     justify-content: space-between;
     margin: 0 auto;
     width: 100%;
+    display: flex;
+    justify-content: space-around;
 
-    @include tablets {
+    @include phones {
+        flex-direction: column;
+        align-items: center;
     }
+
 }
 
 .comments__item {
@@ -31,8 +36,24 @@
     background-color: #ffffff;
 
     @include tablets {
-        width: 50%;
-        margin-right: rem(30px);
+        width: 45%;
     }
 
+    @include phones {
+        width: 80%;
+        margin-bottom: rem(10px);
+        height: auto;
+    }
+
+}
+
+.mob-tab-hidden {
+    display: block;
+    @include tablets {
+        display: none;
+    }
+
+    @include phones {
+        display: none;
+    }
 }
