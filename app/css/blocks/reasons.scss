@@ -1,5 +1,9 @@
 .reasons-section{
     padding-top: rem(102px);
+
+    @include phones {
+        padding-top: rem(50px);
+    }
 }
 
 .reasons-title {
@@ -15,7 +19,18 @@
         &::after {
             right: rem(15px);
         }
+    }
+
+    @include phones {
+        line-height: rem(50px);
+
+        &::before {
+            display: none;
+        }
     
+        &::after {
+            display: none;
+        }
 
     }
 }
@@ -34,6 +49,11 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+
+    @include phones {
+        flex-direction: column;
+        margin-bottom: rem(10px);
+    }
 
 }
 
@@ -54,65 +74,80 @@
         width: rem(92px);
         height: rem(73px);
         top: rem(13px);
-        right: rem(68.5px);
+        left: 50%;
     }
 
     &--kitchen {
         &::before {
             background: url(../../img/kitchen.png) center center no-repeat;
+            transform: translateX(-34px);
         }
     }
 
     &--dish {
         &::before {
             background: url(../../img/dish.png) center center no-repeat;
+            transform: translateX(-38px);
         }
     }
 
     &--money {
         &::before {
             background: url(../../img/money.png) center center no-repeat;
+            transform: translateX(-38px);
         }
     }
 
     &--like {
         &::before {
             background: url(../../img/like.png) center center no-repeat;
+            transform: translateX(-30px);
         }
     }
     &--fish {
         &::before {
             background: url(../../img/fish.png) center center no-repeat;
+            transform: translateX(-43px);
         }
     }
     &--rice {
         &::before {
             background: url(../../img/rice.png) center center no-repeat;
+            transform: translateX(-32px);
         }
     }
     &--octopus {
         &::before {
             background: url(../../img/octopus.png) center center no-repeat;
+            transform: translateX(-36px);
         }
     }
     &--knife {
         &::before {
             background: url(../../img/knife.png) center center no-repeat;
+            transform: translateX(-46px);
         }
     }
     &--pizza {
         &::before {
             background: url(../../img/pizza.png) center center no-repeat;
+            transform: translateX(-31px);
         }
     }
     &--feather {
         &::before {
             background: url(../../img/feather-hand-drawn-outline.png) center center no-repeat;
+            transform: translateX(-32px);
         }
 
         @include tablets {
             margin: 0 auto;
         }
+    }
+
+    @include phones {
+        width: 60%;
+        margin: 0 auto;
     }
 
 }
@@ -123,4 +158,32 @@
     font-weight: 400;
     line-height: rem(28.43px);
     padding: 0 rem(14px);
+}
+
+.mob-hidden {
+    @include phones {
+        display: none;
+    }
+}
+
+.reasons-block__btn {
+    display: none;
+    
+    @include phones {
+        text-transform: uppercase;
+        color: $orange;
+        background-color: transparent;
+        border: 1px solid $orange;
+        border-radius: rem(5px);
+        width: 80%;
+        height: rem(40px);
+        display: block;
+        margin: 0 auto;   
+        cursor: pointer;  
+        
+        &:hover {
+            background-color: $orange;
+            color: #fff;
+        }
+    }
 }
