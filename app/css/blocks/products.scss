@@ -15,9 +15,11 @@
     @include tablets {
         width: 98%;
         margin: 0 auto;
-
     }
 
+    @include phones {
+        padding-top: rem(40px);
+    }
 }
 
 .block-title {
@@ -49,7 +51,6 @@
         background-image: url(../../img/Слой_519.png);
         background-repeat: no-repeat;
         transform: scale(-1, 1);
-
     }
 
     @include tablets {
@@ -64,21 +65,37 @@
             width: rem(86px);
             height: rem(32px);
             background-size: contain;
+        }
+    }
 
-    
+    @include phones {
+        font-size: rem(40px);
+
+        &::before {
+            left: rem(10px);
         }
     
-
+        &::after {
+            right: rem(10px);
+        }
     }
 }
 
 .product-carousel {
     padding-bottom: rem(80px);
+    border: 2px solid lawngreen;
 
     @include tablets {
         padding-left: 2%;
+        width: rem(720px);
+        margin: 0 auto;
+        overflow: hidden;
     }
 
+    @include phones {
+        width: rem(250px);
+        padding-left: rem(30px);
+    }
 }
 
 .product-carousel__list {
@@ -89,7 +106,6 @@
     @include tablets {
         width: 100%;
         padding: 0;
-
     }
 }
 
@@ -108,12 +124,15 @@
         width: 30%;
         margin-right: 4%; 
 
-
         img {
             width: rem(220px);
             height: rem(217px);
         }
+    }
 
+    @include phones {
+        width: 100%;
+        margin-right: rem(40px);
     }
 }
 
@@ -146,7 +165,6 @@
     justify-content: space-around;
     align-items: center;
     margin-bottom: rem(15px);
-
 }
 
 .product__price {
@@ -280,7 +298,6 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-color: #fd4f10;
-
 }
 
 .additive__select {
