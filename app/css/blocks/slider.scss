@@ -6,6 +6,10 @@
         height: rem(420px);
         width: 100%;
     }
+
+    @include phones {
+        height: rem(290px);
+    }
 }
 
 .slider {
@@ -13,6 +17,8 @@
     height: 100%;
     position: relative;
     overflow: hidden;
+
+    
 }
 
 
@@ -46,6 +52,10 @@
             &:hover {
                 background-color: $green;
             }
+
+            @include phones {
+                padding: rem(5px);    
+            }
 		}
 	
 		li.slick-active button {
@@ -57,6 +67,10 @@
     @include tablets {
         top: rem(370px);
 
+    }
+
+    @include phones {
+        top: rem(260px);
     }
 	
 }
@@ -71,8 +85,13 @@
 .slider__container {
     height: 100%;
 
+
     @include tablets {
         width: 100%;
+    }
+
+    @include phones {
+        height: rem(242px);
     }
 }
 
@@ -106,9 +125,7 @@
 
         &--first {
             background: url(../../img/Карта-градиента-784-tablet.jpg) center center / cover no-repeat;
-
         }
-
     }
 }
 
@@ -121,7 +138,11 @@
     @include tablets {
         padding-top: rem(60px);
         padding-left: rem(15px);
-    
+    }
+
+    @include phones {
+        padding-top: rem(44px);
+        padding-bottom: rem(27px);
     }
 }
 
@@ -139,8 +160,11 @@
         width: rem(360px);
         height: rem(160px);
         line-height: rem(72px);
+    }
 
-    
+    @include phones {
+        font-size: rem(49px);
+        width: rem(237px);
     }
 }
 
@@ -178,7 +202,10 @@
     @include tablets {
         margin-bottom: rem(65px);
         padding: rem(21px) rem(38px);
+    }
 
+    @include phones {
+        display: none;
     }
 }
 
@@ -198,7 +225,13 @@
         height: rem(90px);
         top: rem(67px);
         left: rem(423px);
+    }
 
+    @include phones {
+        width: rem(67px);
+        height: rem(67px);
+        top: 40%;
+        left: 90%;
     }
 
 }
@@ -214,7 +247,10 @@
     @include tablets {
         font-size: rem(18px);
         line-height: rem(20px);
+    }
 
+    @include phones {
+        font-size: rem(14px);
     }
 }
 
