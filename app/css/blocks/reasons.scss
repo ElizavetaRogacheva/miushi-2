@@ -166,7 +166,8 @@
     }
 }
 
-.reasons-block__btn {
+.reasons-block__btn,
+.about-info__btn {
     display: none;
     
     @include phones {

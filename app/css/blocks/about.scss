@@ -2,8 +2,9 @@
     padding-top: rem(77px);
 
     @include tablets {
-        padding: 0;
+        padding-top: rem(40px);
     }
+
 }
 
 .about__title {
@@ -18,6 +19,18 @@
             right: 8%;
         }
     }
+
+    @include phones {
+        margin-bottom: rem(40px);
+
+        &::before {
+            display: none;
+        }
+
+        &::after {
+            display: none;
+        }
+    }
 }
 
 .about-info__block {
@@ -28,7 +41,12 @@
     @include tablets {
         width: 94%;
         background: url(../../img/ajy.png) 99% rem(70px)  no-repeat;
+    }
 
+    @include phones {
+        width: 90%;
+        background: none;
+        margin-bottom: rem(20px);
     }
 
 }
@@ -38,6 +56,11 @@
     font-size: rem(24px);
     font-weight: 700;
     margin-bottom: rem(39px);
+
+    @include phones {
+        font-size: rem(20px);
+        margin-bottom: rem(20px);
+    }
 }
 
 .about-info__text {
@@ -62,5 +85,30 @@
         @include tablets {
             padding: 0;
         }
+
+        @include phones {
+            margin-bottom: rem(20px);
+        }
+    }
+
+    @include phones {
+        padding: 0;
+        margin-bottom: rem(15px);
+    }
+}
+
+.about-info__btn {
+    display: none;
+
+    @include phones {
+        display: block;
+    }
+}
+
+.mob-hidden__paragraph {
+    display: block;
+
+    @include phones {
+        display: none;
     }
 }
