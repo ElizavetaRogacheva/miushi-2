@@ -6,12 +6,16 @@
     background-color: #000000;
 
     @include tablets {
-            background: url(../../img/pottery-3227903_1920-tablets.png) 0 0 no-repeat;
-            padding-top: rem(78px);
-            height: rem(357px);
-            padding-left: rem(23px);
+        background: url(../../img/pottery-3227903_1920-tablets.png) 0 0 / cover no-repeat;
+        height: rem(357px);
+        padding-left: rem(23px);
+    }
 
-
+    @include phones {
+        padding-top: rem(50px);
+        height: rem(486px);
+        background: url(../../img/mob-form.png) 0 0 / cover no-repeat;
+        padding-left: 0;
     }
 
 }
@@ -21,6 +25,11 @@
 
     @include tablets {
         padding: 0;
+    }
+
+    @include phones {
+        width: 90%;
+        margin: 0 auto;
     }
 
 }
@@ -40,14 +49,25 @@
     line-height: rem(30.1px);
     color: #fff;
     margin-bottom: rem(29px);
+
+    @include phones {
+        font-size: rem(44px);
+        line-height: rem(50px);
+
+    }
 }
 
 .contacts__form {
     margin-bottom: rem(37px);
+
+    @include phones {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .contacts__input {
-    width: rem(241px);
+    width: 25%;
     height: rem(38px);
     border: none;
     border-bottom: 1px solid #fff;
@@ -65,10 +85,14 @@
     }
 
     @include tablets {
-        width: 30%;
+        width: 25%;
         margin-right: 4%;
+    }
 
-
+    @include phones {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: rem(40px);
     }
 }
 
@@ -90,7 +114,11 @@
     }
 
     @include tablets {
-        width: 30%;
+        width: 25%;
+    }
+
+    @include phones {
+        width: 100%;
     }
 
 }
