@@ -149,5 +149,54 @@
 
 .footer-menu__top.active-accordion + .footer-menu__wrapper {
     display: block;
+    animation: emerging 0.5s ease-in-out 0s;
+
+    li {
+        animation: appearance 0.5s ease-in-out 0s;
+    }
+}
+
+@keyframes emerging {
+    0% {
+        height: 0;
+   }
+
+    25% {
+        height: 25%;
+    }
+
+    50% {
+        height: 50%;
+    }
+
+    75% {
+        height: 75%;
+    }
+
+    100% {
+        height: auto;
+  }
+}
+
+@keyframes appearance {
+    0% {
+        opacity: 0;
+   }
+
+    25% {
+        opacity: 0.25;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    75% {
+        opacity: 0.75;
+    }
+
+    100% {
+        opacity: 1;
+  }
 }
 
