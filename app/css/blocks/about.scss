@@ -105,10 +105,6 @@
     }
 }
 
-.mob-hidden__paragraph {
-    display: block;
-
-    @include phones {
-        display: none;
-    }
+.mob-hidden__btn {
+    display: none;
 }
