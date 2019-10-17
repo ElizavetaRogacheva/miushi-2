@@ -36,11 +36,11 @@
 .about-info__block {
     width: rem(1140px);
     margin: 0 auto rem(160px);
-    background: url(../../img/ajy.png) rem(863px) rem(70px)  no-repeat;
+    background: url(../img/ajy.png) rem(863px) rem(70px)  no-repeat;
 
     @include tablets {
         width: 94%;
-        background: url(../../img/ajy.png) 99% rem(70px)  no-repeat;
+        background: url(../img/ajy.png) 99% rem(70px)  no-repeat;
     }
 
     @include phones {

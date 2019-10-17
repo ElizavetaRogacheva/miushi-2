@@ -2,11 +2,11 @@
     max-width: 100%;
     padding-top: rem(78px);
     padding-left: 40%;
-    background: url(../../img/pottery-3227903_1920.png) 0 0 no-repeat;
+    background: url(../img/pottery-3227903_1920.png) 0 0 no-repeat;
     background-color: #000000;
 
     @include tablets {
-        background: url(../../img/pottery-3227903_1920-tablets.png) 0 0 / cover no-repeat;
+        background: url(../img/pottery-3227903_1920-tablets.png) 0 0 / cover no-repeat;
         height: rem(357px);
         padding-left: rem(23px);
     }
@@ -14,7 +14,7 @@
     @include phones {
         padding-top: rem(50px);
         height: rem(486px);
-        background: url(../../img/mob-form.png) 0 0 / cover no-repeat;
+        background: url(../img/mob-form.png) 0 0 / cover no-repeat;
         padding-left: 0;
     }
 

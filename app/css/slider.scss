@@ -106,23 +106,23 @@
     display: flex !important;
 
     &--first {
-        background: url(../../img/Карта_градиента_784.jpg) center center / cover no-repeat;
+        background: url(../img/Карта_градиента_784.jpg) center center / cover no-repeat;
 
     }
 
     &--second {
-        background: url(../../img/ow9ldfpcdivl.jpg) center center / cover no-repeat;
+        background: url(../img/ow9ldfpcdivl.jpg) center center / cover no-repeat;
     }
 
     &--third {
-        background: url(../../img/land-rolls-land-japanese-food-soy-sauc.jpg) center center / cover no-repeat;
+        background: url(../img/land-rolls-land-japanese-food-soy-sauc.jpg) center center / cover no-repeat;
     }
 
     @include tablets {
         width: 100%;
 
         &--first {
-            background: url(../../img/Карта-градиента-784-tablet.jpg) center center / cover no-repeat;
+            background: url(../img/Карта-градиента-784-tablet.jpg) center center / cover no-repeat;
         }
     }
 }
