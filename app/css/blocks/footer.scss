@@ -129,7 +129,6 @@
         background-image: url(../../img/arrow-bottom.png);
         background-color: transparent;
         cursor: pointer;
-
     }
 }
 
@@ -138,6 +137,11 @@
         display: flex;
         justify-content: space-between;
         cursor: pointer;
+
+        &:focus {
+            outline: 0;
+            background-color: transparent;
+        }
     }
 }
 
@@ -149,12 +153,13 @@
 
 .footer-menu__top.active-accordion + .footer-menu__wrapper {
     display: block;
-    animation: emerging 0.5s ease-in-out 0s;
+    animation: emerging 0.15s ease-in-out 0s;
 
     li {
         animation: appearance 0.5s ease-in-out 0s;
     }
 }
+
 
 @keyframes emerging {
     0% {
@@ -170,7 +175,7 @@
     }
 
     75% {
-        height: 75%;
+        height: 70%;
     }
 
     100% {

@@ -83,7 +83,6 @@
 
 .product-carousel {
     padding-bottom: rem(80px);
-    border: 2px solid lawngreen;
 
     @include tablets {
         padding-left: 2%;
@@ -121,7 +120,7 @@
     }
 
     @include tablets {
-        width: 30%;
+        width: rem(263px);
         margin-right: 4%; 
 
         img {
